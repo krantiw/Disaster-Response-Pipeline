@@ -61,7 +61,8 @@ Go to http://0.0.0.0:3001/
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disaster_response_db.db`
         
         Screenshot of process_data.py
-        ![Process Data](Process Screenshots/process_data.png)
+        ![process_data](https://user-images.githubusercontent.com/70027063/115119339-7a0d5580-9fc5-11eb-8c69-bd801360dd34.png)
+
 
        
   - To run the ML pipeline that loads data from DB, trains classifier and saves the classifier as a pickle file
