@@ -21,34 +21,37 @@ The dataset is provided by [Figure Eight](https://www.figure-eight.com/dataset/c
 * **disaster_categories.csv**: Categories of the messages
 * **disaster_messages.csv**: Multilingual disaster response messages
 
+### Important Files
+**app/templates/***: templates/html files for web app
+
+**data/process_data.py**: Extract Train Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database
+
+**models/train_classifier.py**: A machine learning pipeline that loads data, trains a model, and saves the trained model as a .pkl file for later use
+
+**run.py**: This file can be used to launch the Flask web app used to classify disaster messages
+
 ## Running the code
 
 Run the following command in the app's directory to run your web app. python run.py
 Go to http://0.0.0.0:3001/
 
 <pre>
-|-- disaster_response_pipeline_project
-    |-- disaster_response_pipeline
-    |   |-- data
-    |   |   |-- ETL Pipeline Preparation.ipynb
-    |   |   |-- process_data.py    
-    |   |   |-- disaster_categories.csv 
-    |   |   |-- disaster_messages.csv     
-    |   |
-    |   |-- classifier
-    |   |   |-- ML Pipeline Preparation.ipynb
-    |   |   |-- train_classifier.py
-    |   |   |-- trained_classifier.pkl
-    |   |
-    |   |-- disaster_response_pipeline.py
-    |   |-- dash_disaster_response_pipeline.py
-    |
-    |-- db.sqlite3
-    |-- db_dump.txt
-    |-- README.md
+.
+├── app     
+│   ├── run.py                           # Flask file that runs app
+│   └── templates   
+│       ├── go.html                      # Classification result page of web app
+│       └── master.html                  # Main page of web app    
+├── data                   
+│   ├── disaster_categories.csv          # Dataset including all the categories  
+│   ├── disaster_messages.csv            # Dataset including all the messages
+│   └── process_data.py                  # Data cleaning
+├── models
+│   └── train_classifier.py              # Train ML model           
+└── README.md
 </pre>
 
-If the application does not find the **trained_classifier.pkl** pickle file to load the model it will check also if the database **db.sqlite3** present and if not process the data and finaly train the model (save it in **classifier/trained_classifier.pkl**) to get the application ready to classify messages in real time.
+
 
 
 
