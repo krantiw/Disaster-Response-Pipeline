@@ -24,7 +24,8 @@ The dataset is provided by [Figure Eight](https://www.figure-eight.com/dataset/c
 
 ## Running the code
 
-From the project folder run `python dash_disaster_response_pipeline.py` to start the dash application. The default url to connect to it is http://127.0.0.1:8050/.
+Run the following command in the app's directory to run your web app. python run.py
+Go to http://0.0.0.0:3001/
 
 <pre>
 |-- disaster_response_pipeline_project
