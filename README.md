@@ -80,6 +80,8 @@ Go to http://0.0.0.0:3001/
       `python run.py` 
       Go to http://0.0.0.0:3001/
       It will classify the given text
+     ![sample_input](https://user-images.githubusercontent.com/70027063/115120055-066d4780-9fc9-11eb-8f75-4a8b1bc4b37c.png)
+
 
 
         
