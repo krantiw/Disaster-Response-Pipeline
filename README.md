@@ -1,5 +1,7 @@
 # Disaster-Response-Pipeline
 
+GitHub repository link of my project: https://github.com/krantiw/Disaster-Response-Pipeline
+
 
 The goal of this project is to apply the data engineering skills learned in the course to analyze disaster data from [Figure Eight](https://www.figure-eight.com/) to build a model for an API that classifies disaster messages. The project is divided in three sections:
 * **Data Processing**: build an ETL (Extract, Transform, and Load) Pipeline to extract data from the given dataset, clean the data, and then store it in a SQLite database
