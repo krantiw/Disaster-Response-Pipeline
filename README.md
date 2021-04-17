@@ -43,13 +43,13 @@ Go to http://0.0.0.0:3001/
 │   ├── run.py                           # Flask file that runs app
 │   └── templates   
 │       ├── go.html                      # Classification result page of web app
-│       └── master.html                  # Main page of web app    
+│       └── master.html                   # Main page of web app
+├── models
+│   └── train_classifier.py              # Train ML model       
 ├── data                   
 │   ├── disaster_categories.csv          # Dataset including all the categories  
 │   ├── disaster_messages.csv            # Dataset including all the messages
-│   └── process_data.py                  # Data cleaning
-├── models
-│   └── train_classifier.py              # Train ML model           
+│   └── process_data.py                  # Data cleaning       
 └── README.md
 </pre>
 
