@@ -54,6 +54,22 @@ Go to http://0.0.0.0:3001/
 </pre>
 
 
+## Instructions to run each file:
 
+1. Run the following commands in the project's directory. This will clean the files,set up the database, train model and save the model.
+ - To run ETL pipeline to clean data and store the processed data in the database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disaster_response_db.db`
+        
+        
+       
+  - To run the ML pipeline that loads data from DB, trains classifier and saves the classifier as a pickle file
+        `python models/train_classifier.py data/disaster_response_db.db models/classifier.pkl`
+        
+        
+ 2.- To run your web app in the app's directory
+      `python run.py`
+3.
+        
+   
 
 
