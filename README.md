@@ -59,20 +59,34 @@ Go to http://0.0.0.0:3001/
 1. Run the following commands in the project's directory. This will clean the files,set up the database, train model and save the model.
  - To run ETL pipeline to clean data and store the processed data in the database
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disaster_response_db.db`
-        
-        Screenshot of process_data.py
-        ![process_data](https://user-images.githubusercontent.com/70027063/115119339-7a0d5580-9fc5-11eb-8c69-bd801360dd34.png)
+     
+     Screenshot of process_data.py
+     
+ ![process_data](https://user-images.githubusercontent.com/70027063/115119503-4da60900-9fc6-11eb-8f19-72fd552ad03c.png)
 
 
        
   - To run the ML pipeline that loads data from DB, trains classifier and saves the classifier as a pickle file
         `python models/train_classifier.py data/disaster_response_db.db models/classifier.pkl`
-        
+    
+     Screenshot of train_classifier.py
+    ![train_classifier](https://user-images.githubusercontent.com/70027063/115119534-74fcd600-9fc6-11eb-8e05-5235de298518.png)
+    
+    Screenshot of train_classifier.py with precision, recall etc. for each category
+    
+    ![train_classifier_category_precision_recall](https://user-images.githubusercontent.com/70027063/115119576-c016e900-9fc6-11eb-865a-524c3eef929a.png)
         
  2.- To run your web app in the app's directory
-      `python run.py`
-3.
+      `python run.py` 
+      Go to http://0.0.0.0:3001/
+      It will classify the given text
+
+
         
-   
+   After clicking Classify Message, we can see the categories which the message belongs to highlighted in green
+   ![sample_output](https://user-images.githubusercontent.com/70027063/115119694-51865b00-9fc7-11eb-9003-4db545e71b54.png)
 
 
+The main page shows some graphs about training dataset, provided by Figure Eight
+
+![main_page](https://user-images.githubusercontent.com/70027063/115119921-6c0d0400-9fc8-11eb-8af7-3bd1b924ee13.png)
