@@ -14,7 +14,6 @@ This project uses Python 3.7.2 and the following libraries:
 * [nltk](https://www.nltk.org/)
 * [scikit-learn](http://scikit-learn.org/stable/)
 * [sqlalchemy](https://www.sqlalchemy.org/)
-* [dash](https://plot.ly/dash/)
 
 ## Data
 
