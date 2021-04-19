@@ -61,6 +61,8 @@ Go to http://0.0.0.0:3001/
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disaster_response_db.db`
      
      Screenshot of process_data.py
+    
+    ![process_data](https://user-images.githubusercontent.com/70027063/115167971-065b6d80-a0d7-11eb-89f6-499da4099519.jpeg)
      
  
 
@@ -70,8 +72,8 @@ Go to http://0.0.0.0:3001/
         `python models/train_classifier.py data/disaster_response_db.db models/classifier.pkl`
     
      Screenshot of train_classifier.py with precision, recall etc. for each category
-    
-        
+       ![model](https://user-images.githubusercontent.com/70027063/115168019-36a30c00-a0d7-11eb-8e35-ba5b0e6a5d58.jpeg) 
+       
  2.- To run your web app in the app's directory
       `python run.py` 
       Go to http://0.0.0.0:3001/
